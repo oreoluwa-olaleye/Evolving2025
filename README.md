@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Evolving: Beyond the British Spell
+title: "Evolving: Beyond the British Spell"
 permalink: /readme.html
-description: Series overview, vision, scope, and creative direction for the Evolving docu-series by Oreoluwa O. Olaleye.
+description: "Series overview, vision, scope, and creative direction for the Evolving docu-series by Oreoluwa O. Olaleye."
 ---
 
 # 🌍 Evolving: Beyond the British Spell
@@ -116,5 +116,5 @@ This series is our archive, our resistance, and our reawakening.”*
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**.  
+© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 All Rights Reserved.
