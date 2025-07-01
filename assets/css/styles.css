@@ -199,3 +199,9 @@ nav a:hover {
     padding: 1rem;
   }
 }
+
+nav a.active {
+  font-weight: bold;
+  color: #fff;
+  text-decoration: underline;
+}
