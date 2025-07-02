@@ -117,5 +117,4 @@ Discounts available for educational reform documentaries and curriculum partners
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _“They colonized the classroom. We are now rewriting the board.”_
