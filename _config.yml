@@ -1,44 +1,33 @@
 # _config.yml
 
-title: Evolving: Beyond the British Spell
-description: A docu-drama archive of global colonial resistance.
-baseurl: ""  # Leave as "" if deploying to root. Use "/folder" for subdirectory deployments.
-url: ""      # Set to your full site URL without trailing slash when ready (e.g., "https://evolving2025.pages.dev")
+title: Evolving
+description: A timeline of global colonial resistance.
+baseurl: "" # Leave this empty if deploying at root
+url: ""     # Add your full URL later (e.g. https://evolving.example.com)
 
-theme: minima
 markdown: kramdown
+permalink: pretty
 
-# No plugins used
+# No plugins (important for zero error builds)
 plugins: []
 
-# Folder settings
+# Output collections (e.g., seasons)
+collections:
+  seasons:
+    output: true
+    permalink: /seasons/:name/
+
+# Default layout for collection items
+defaults:
+  - scope:
+      path: ""
+      type: "seasons"
+    values:
+      layout: default
+
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
   - README.md
-
-permalink: pretty
-
-# Optional: structure for custom collections like "seasons"
-collections:
-  seasons:
-    output: true
-    permalink: /seasons/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: "seasons"
-    values:
-      layout: "default"
-
-# Markdown settings
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    span:
-      disable: true
-    block:
-      disable: true
