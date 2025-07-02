@@ -54,16 +54,12 @@ exclude:
 # 🔌 Plugins (SEO + Feed + Sitemap)
 # =============================
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-include-cache
 
 # =============================
 # 🔗 Social Links (for SEO)
 # =============================
 social:
-  twitter: "@evolvingseries"
-  github: "oreoluwaolaleye/evolving"
+  
   email: "oreoluwaolaleye96@gmail.com"
 
 # =============================
