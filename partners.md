@@ -97,8 +97,3 @@ We’re open to:
 
 > _“The empire twisted our truth.  
 Let’s untangle it — voice by voice, frame by frame.”_
-
----
-
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
-*Built by Fused-Up Innovations — in defiance and in memory.*
