@@ -113,5 +113,4 @@ _"They planted settlers and called it peace. We buried martyrs and called it mem
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _"History began with blood. But memory ends with fire."_
