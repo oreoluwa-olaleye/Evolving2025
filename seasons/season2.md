@@ -97,5 +97,4 @@ This season has been cited by:
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _This series remembers what the Empire tried to forget._
