@@ -122,6 +122,3 @@ Stay tuned for:
 - [📩 Contact](mailto:oreoluwaolaleye96@gmail.com)
 
 ---
-
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
-*Rebel with a reason. Memory is resistance.*
