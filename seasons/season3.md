@@ -94,5 +94,4 @@ Want to adapt, translate, or co-produce this season?
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _Reclaiming memory. One rebellion at a time._
