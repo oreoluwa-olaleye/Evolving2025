@@ -112,6 +112,5 @@ We’re casting actors, artists, and language speakers for reenactments and voic
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _“History isn’t buried — it’s ported, traded, and retold.  
 And this time, by us.”_
