@@ -1,10 +1,19 @@
-<nav class="site-nav" aria-label="Main Navigation">
-  <ul class="nav-list">
-    <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
-    <li><a href="{{ '/seasons.md' | relative_url }}">Seasons</a></li>
-    <li><a href="{{ '/readme.md' | relative_url }}">Series Bible</a></li>
-    <li><a href="{{ '/LICENSE.md' | relative_url }}">License</a></li>
-    <li><a href="{{ '/partners.md' | relative_url }}">Partners</a></li>
-    <li><a href="mailto:oreoluwaolaleye96@gmail.com">Contact</a></li>
-  </ul>
-</nav>
+<header class="site-header">
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="{{ '/' | relative_url }}">EVOLVING</a>
+    </h1>
+    <p class="tagline">Beyond the British Spell</p>
+  </div>
+
+  <nav class="site-nav" aria-label="Main Navigation">
+    <ul class="nav-list">
+      <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li><a href="{{ '/seasons.md' | relative_url }}">Seasons</a></li>
+      <li><a href="{{ '/readme.md' | relative_url }}">Series Bible</a></li>
+      <li><a href="{{ '/LICENSE.md' | relative_url }}">License</a></li>
+      <li><a href="{{ '/partners.md' | relative_url }}">Partners</a></li>
+      <li><a href="mailto:oreoluwaolaleye96@gmail.com">Contact</a></li>
+    </ul>
+  </nav>
+</header>
