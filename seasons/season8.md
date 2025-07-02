@@ -110,6 +110,5 @@ Discounts for educational & human rights filmmakers available.
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _"The Outback holds bones, not emptiness. The haka still echoes.  
 Oceania was never silent. It was silenced."_
