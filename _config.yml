@@ -1,8 +1,7 @@
 title: Evolving
 description: The archive of colonial resistance.
-baseurl: "" # Leave empty if deploying to root
-url: ""      # Add your live URL later
+baseurl: ""  # Important for root deployment
+url: ""      # You can leave this blank for now
 
-# No plugins, no drama
 markdown: kramdown
 theme: minima
