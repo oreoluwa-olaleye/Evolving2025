@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Season 6 – Ireland: The First Colony
-description: Season 6 of Evolving explores Britain’s earliest colony — Ireland — and how its conquest became the colonial blueprint for centuries of imperialism.
+title: "Season 6 – Ireland: The First Colony"
+description: "Season 6 of Evolving explores Britain’s earliest colony — Ireland — and how its conquest became the colonial blueprint for centuries of imperialism."
 permalink: /seasons/season6/
 ---
 
