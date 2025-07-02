@@ -1,33 +1,8 @@
-# _config.yml
-
 title: Evolving
-description: A timeline of global colonial resistance.
-baseurl: "" # Leave this empty if deploying at root
-url: ""     # Add your full URL later (e.g. https://evolving.example.com)
+description: The archive of colonial resistance.
+baseurl: "" # Leave empty if deploying to root
+url: ""      # Add your live URL later
 
+# No plugins, no drama
 markdown: kramdown
-permalink: pretty
-
-# No plugins (important for zero error builds)
-plugins: []
-
-# Output collections (e.g., seasons)
-collections:
-  seasons:
-    output: true
-    permalink: /seasons/:name/
-
-# Default layout for collection items
-defaults:
-  - scope:
-      path: ""
-      type: "seasons"
-    values:
-      layout: default
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - README.md
+theme: minima
