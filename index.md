@@ -117,6 +117,3 @@ _Rebel with a reason._
 This series is our archive, our resistance, and our reawakening.”*
 
 ---
-
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
-All Rights Reserved.
