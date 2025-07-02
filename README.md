@@ -113,8 +113,3 @@ Rebel with a reason.
 
 > *“We inherited flag independence — not functional freedom.  
 This series is our archive, our resistance, and our reawakening.”*
-
----
-
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
-All Rights Reserved.
