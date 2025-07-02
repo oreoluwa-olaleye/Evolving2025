@@ -118,5 +118,4 @@ We need:
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _Descendant of survivors. Rebel with a reason._
