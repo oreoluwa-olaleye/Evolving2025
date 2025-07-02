@@ -126,6 +126,4 @@ A licensing agreement is required.
 - [📩 Contact](/contact.html)
 
 ---
-
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _This story was inherited, not imagined. This series is resistance._
