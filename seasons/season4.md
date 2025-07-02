@@ -116,5 +116,4 @@ _“The rulers wrote with ink. The people bled in dust.”_
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _The blueprint has been exposed. The reckoning is televised._
