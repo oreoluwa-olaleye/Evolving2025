@@ -54,7 +54,6 @@ exclude:
 # 🔌 Plugins (SEO + Feed + Sitemap)
 # =============================
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
