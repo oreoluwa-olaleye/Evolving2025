@@ -1,0 +1,126 @@
+# =============================
+# 🌍 EVOLVING – Site Metadata
+# =============================
+title: "Evolving: Beyond the British Spell"
+description: >
+  A global docu-drama series reclaiming the story of British colonialism through the eyes of the colonized —
+  spanning 6 continents, 50+ nations, and 500+ years of resistance.
+url: "https://evolv.i.ng"  # Update to your live domain
+baseurl: ""                # Leave empty if site is hosted at root
+lang: en
+timezone: UTC
+
+# =============================
+# 💡 Author Info
+# =============================
+author:
+  name: "Oreoluwa O. Olaleye"
+  email: "oreoluwaolaleye96@gmail.com"
+  url: "https://evolv.i.ng"
+
+# =============================
+# ⚙️ Build Settings
+# =============================
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+collections:
+  seasons:
+    output: true
+    permalink: /seasons/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+  - scope:
+      path: "seasons"
+      type: "seasons"
+    values:
+      layout: season
+
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.md
+  - package.json
+  - .gitignore
+
+# =============================
+# 🔌 Plugins (SEO + Feed + Sitemap)
+# =============================
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# =============================
+# 🔗 Social Links (for SEO)
+# =============================
+social:
+  twitter: "@evolvingseries"
+  github: "oreoluwaolaleye/evolving"
+  email: "oreoluwaolaleye96@gmail.com"
+
+# =============================
+# 🗂 Navigation (Optional — Custom Header/Menu Support)
+# =============================
+nav:
+  - title: Home
+    url: /
+  - title: Series Bible
+    url: /readme.html
+  - title: Seasons
+    url: /season-archive.html
+  - title: License & Usage
+    url: /LICENSE.html
+  - title: Contact
+    url: mailto:oreoluwaolaleye96@gmail.com
+
+# =============================
+# 🔍 SEO Customization
+# =============================
+seo:
+  title: "Evolving: Beyond the British Spell"
+  description: "A cinematic rebellion across continents — decoding 500+ years of colonial trauma."
+  name: "Evolving Series"
+  image: "/assets/og-evolving.jpg"
+  twitter_card: "summary_large_image"
+
+# =============================
+# 🛠️ Deployment (Optional)
+# =============================
+github:
+  is_project_page: false
+
+# =============================
+# 🌐 Optional PWA/Favicon Settings
+# =============================
+favicon: "/favicon.ico"
+logo: "/assets/logo.png"
+
+# =============================
+# 📄 Site Output
+# =============================
+sass:
+  style: compressed
+
+include:
+  - _pages
+  - _seasons
+  - _includes
+  - _layouts
+  - assets
+  - _data
+
+# =============================
+# 📬 Contact Info
+# =============================
+contact:
+  email: "oreoluwaolaleye96@gmail.com"
+  whatsapp: "+2349036460398"
