@@ -110,5 +110,4 @@ _"Borders are never straight when drawn by liars."_
 
 ---
 
-© {{ site.time | date: "%Y" }} **Oreoluwa O. Olaleye**  
 _“They didn’t build a nation. They opened a wound.”_
