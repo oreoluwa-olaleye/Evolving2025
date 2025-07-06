@@ -1,254 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
+
+---
+
+layout: default title: "The Black Man is Not a Fool" permalink: /the-black-man/
+
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Oreoluwa O. Olaleye" />
   <meta name="description" content="An unapologetic proclamation of African wisdom, pride, and legacy." />
-  <title>The Black Man is Not a Fool | Evolv.i.ng</title>
-  <style>
+  <meta name="author" content="Oreoluwa O. Olaleye" />
+  <title>The Black Man is Not a Fool | Evolv.i.ng</title>  <meta property="og:title" content="The Black Man is Not a Fool | Evolv.i.ng" />
+  <meta property="og:description" content="A powerful message by Oreoluwa O. Olaleye." />
+  <meta property="og:image" content="https://evolv.i.ng/assets/images/black-man-cover-aa89977b.jpg" />
+  <meta property="og:url" content="https://evolv.i.ng/the-black-man/" />
+  <meta name="twitter:card" content="summary_large_image" />  <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fdfcf9;
-      color: #222;
-      line-height: 1.8;
       margin: 0;
-      padding: 0;
+      font-family: 'Georgia', serif;
+      background: #fdfcf9;
+      color: #222;
     }
 
     header {
-      background-color: #111;
-      color: #f9c907;
-      padding: 3rem 1rem;
+      background: url('/assets/images/black-man-cover-aa89977b.jpg') center/cover no-repeat;
+      color: #fff;
       text-align: center;
+      padding: 5rem 1rem;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    header h1, header p {
+      position: relative;
+      z-index: 2;
     }
 
     header h1 {
+      font-size: 2.8rem;
       margin: 0;
-      font-size: 2.5rem;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      color: #f9c907;
     }
 
     .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      max-width: 840px;
+      margin: auto;
+      padding: 2rem 1.2rem;
     }
 
     blockquote {
-      border-left: 5px solid #f9c907;
+      border-left: 4px solid #f9c907;
       padding-left: 1rem;
       margin: 2rem 0;
       font-style: italic;
       color: #555;
     }
 
-    strong {
-      display: block;
-      margin-top: 1.5rem;
-      font-weight: bold;
-      font-size: 1.2rem;
+    .signature {
+      text-align: right;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      color: #f9c907;
+      margin-top: 3rem;
+    }
+
+    .share-buttons {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    .share-buttons a,
+    .share-buttons button {
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      margin: 0.3rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .donation-box, .email-signup {
+      background: #f5f5ee;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      max-width: 400px;
+      margin: 1rem auto;
+    }
+
+    .email-form input[type="email"] {
+      padding: 0.7rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .email-form input[type="submit"] {
+      background: #000;
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .email-form input[type="submit"]:hover {
+      background: #f9c907;
       color: #000;
     }
 
-    .signature {
-      margin-top: 4rem;
-      font-style: italic;
-      text-align: right;
-    }
-
-    .share {
-      margin: 3rem 0 1rem;
-      text-align: center;
-    }
-
-    .share button,
-    .share a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.7rem 1.2rem;
-      border: none;
-      background-color: #222;
-      color: #fdfcf9;
-      font-size: 0.9rem;
-      cursor: pointer;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .share button:hover,
-    .share a:hover {
-      background-color: #f9c907;
-      color: #111;
-    }
-
-    footer {
-      margin-top: 4rem;
-      background-color: #111;
+    .footer {
+      background: #111;
       color: #eee;
       text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
     }
 
-    footer a {
+    .footer a {
       color: #f9c907;
       text-decoration: none;
-      font-weight: bold;
     }
-
-    @media screen and (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .container {
-        padding: 0 1rem;
-      }
-    }
-  </style>
-</head>
+  </style></head>
 <body>
-
 <header>
   <h1>The Black Man is Not a Fool</h1>
   <p>He is Wise.</p>
 </header>
-
 <main class="container">
-
-  <!-- Share buttons -->
-  <div class="share">
+  <section class="intro">
+    <h2 class="section-title">About Evolv.i.ng</h2>
+    <p><strong>Evolv.i.ng</strong> is a storytelling, transformation, and wisdom project powered by <em>Fused-Up Innovations</em>. It is a digital sanctuary for thought-leaders, visionaries, rebels, and creatives who know that culture is not just remembered — it is reborn.</p>
+  </section>
+  <section class="share-buttons">
     <button onclick="shareNative()">📲 Share</button>
-    <a href="https://wa.me/?text=https://evolv.i.ng/the-black-man.html" target="_blank">📤 WhatsApp</a>
-    <a href="https://t.me/share/url?url=https://evolv.i.ng/the-black-man.html&text=Read this powerful truth." target="_blank">📣 Telegram</a>
-  </div>
-
-  <!-- Main content -->
-  <p>Let’s get this straight: the Black man isn’t stupid. <br>
-  He isn’t lazy. <br>
-  He isn’t lost.</p>
-
-  <p>He’s just been;<br>
-  misread, misquoted, and misunderstood by a world too loud to listen and too proud to learn.</p>
-
-  <p>Before the castles of Europe, there were the cities of Kush, the libraries of Timbuktu, the bronze heads of Ife.<br>
-  While others were chasing shadows, the Black man was building soul.</p>
-
-  <p>He didn’t sail the seas to claim other lands because he was too busy cultivating his own.<br>
-  He didn’t colonize the world because he had nothing to prove.</p>
-
-  <strong>He was whole.</strong>
-
-  <p>You think he was a fool because he didn’t conquer?<br>
-  No. He was wise because he didn’t need to.</p>
-
-  <blockquote>Wisdom isn’t always loud. Sometimes it’s rooted, still, and patient.</blockquote>
-
-  <p>Africa birthed the world, then watched as her children forgot her name.<br>
-  The ones who left returned centuries later, dressed in armor and arrogance, calling themselves discoverers.</p>
-
-  <blockquote>Funny. How do you discover where your umbilical cord was buried?</blockquote>
-
-  <p>These so-called colonizers? Just prodigal siblings who couldn’t endure the test of time.<br>
-  They traded soul for steel, harmony for hegemony, spirit for spectacle.</p>
-
-  <p>The African didn’t forget. He remembered rhythm, remembered rain, remembered roots.<br>
-  He didn’t carve up the earth. He danced on it. Lived with it. Knew its names.</p>
-
-  <p>While others built empires to feel big, Africa built legacies to stay eternal.<br>
-  Kingdoms didn’t rise through greed, but through grace.<br>
-  Power wasn’t about how many you could kill, but how many you could feed.</p>
-
-  <p>Even in war, the Black man fought with rules.<br>
-  Even in pain, he knew balance.<br>
-  His strength wasn’t in how hard he hit, but in how deeply he endured.</p>
-
-  <strong>And let’s be real: the world didn’t leave Africa behind. It ran from her.</strong>
-
-  <blockquote>Because truth this deep makes the shallow shake.<br>
-  Because spirit this rich makes the greedy nervous.</blockquote>
-
-  <p>Colonization wasn’t a flex. It was a failure; a sign of lost identity.<br>
-  You don’t need to steal what you can grow. Unless you’ve forgotten how to plant.</p>
-
-  <p>Africa remembered.<br>
-  Even when dragged in chains, even when renamed and reshaped, she remembered.<br>
-  That’s why we still drum. Still sing. Still rise.</p>
-
-  <p>They took gold, but couldn’t steal glory.<br>
-  They took names, but not knowing.<br>
-  They took people, but not purpose.</p>
-
-  <strong>And still, here we are. Speaking. Building. Reclaiming.</strong>
-
-  <p>We are not what they painted.<br>
-  We are the canvas, the color, and the story.</p>
-
-  <p>We didn’t colonize because we didn’t need to.<br>
-  Our greatness wasn’t in how far we could reach, but in how deep we were rooted.</p>
-
-  <p>We had gods before missionaries.<br>
-  We had trade before borders.<br>
-  We had systems before colonial order.</p>
-
-  <blockquote>Europe didn’t invent civilization. It stumbled upon memory.<br>
-  A memory we carried in blood and bone.</blockquote>
-
-  <p>The Bantu moved with balance. The Yoruba ruled with structure. The Ethiopians wrote with ink before most of Europe could spell its own name.</p>
-
-  <p>…but they don’t teach you that in school.<br>
-  They show you chains, not crowns. Ships, not scripts.</p>
-
-  <strong>They fear what we remember.</strong>
-
-  <p>Because once we remember who we are, the illusion breaks.<br>
-  And when the illusion breaks, so does their version of power.</p>
-
-  <strong>The Black man is not a fool.</strong>
-
-  <p>He is fire, filtered through patience.<br>
-  He is thunder, holding back out of love.<br>
-  He is not waiting for a seat at any table. He is the tree the table was carved from.</p>
-
-  <p>Our story isn’t tragedy. It’s transformation.<br>
-  It’s not what they did to us, it’s what we do next.</p>
-
-  <blockquote>Because the comeback is always greater than the setback.</blockquote>
-
-  <p>And this time, we’re not asking for respect. We’re building it.</p>
-
-  <strong>So write it clearly: the Black man is not a fool.</strong>
-
-  <p>He is the first. The root. The rhythm. And he’s not done.</p>
-
-  <div class="signature">
-    — Oreoluwa O. Olaleye<br>
-    Rebel with a Reason, Son of the Soil.
-  </div>
-
+    <a href="https://wa.me/?text=Read%20this:%20https://evolv.i.ng/the-black-man/" target="_blank">📤 WhatsApp</a>
+    <a href="https://t.me/share/url?url=https://evolv.i.ng/the-black-man/&text=You need to read this." target="_blank">📣 Telegram</a>
+  </section>
+  <section class="content">
+    <p>Let’s get this straight: the Black man isn’t stupid. He isn’t lazy. He isn’t lost.</p>
+    <p>He’s just been misread, misquoted, and misunderstood...</p>
+    <blockquote>Wisdom isn’t always loud. Sometimes it’s rooted, still, and patient.</blockquote>
+    <p>...</p>
+    <div class="signature">
+      — Oreoluwa O. Olaleye<br />Rebel with a Reason, Son of the Soil.
+    </div>
+  </section>
+  <section class="donation-box">
+    <h2 class="section-title">Support the Evolv.i.ng Project</h2>
+    <p><strong>Bank:</strong> Wema Bank Plc – Tinubu Branch</p>
+    <p><strong>Account Name:</strong> Fused‑Up Innovations</p>
+    <p><strong>Account Number:</strong> 0126530023</p>
+    <p><strong>Sort Code:</strong> 035150420</p>
+    <p><strong>SWIFT:</strong> WEMANGLA02T</p>
+    <p><strong>Branch Address:</strong> Wema House, 27 Nnamdi Azikiwe Street, Tinubu Square, Lagos Island, Nigeria</p>
+    <p>Please notify us via <a href="mailto:hr@fui.com.ng">hr@fui.com.ng</a> after transfer.</p>
+  </section>
+  <section class="email-signup">
+    <h2>📬 Join the Evolv.i.ng Dispatch</h2>
+    <p>Get ancestral truths, essays, and unapologetic wisdom to your inbox.</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/oreoluwa" method="post" target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/oreoluwa', 'popupwindow')" class="email-form">
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required />
+      <input type="submit" value="Subscribe" />
+    </form>
+    <p class="disclaimer">We don’t spam. Just renaissance fuel from the motherland.</p>
+  </section>
 </main>
-
-<footer>
-  &copy; 2025 Evolv.i.ng. All rights reserved. | 
-  <a href="/">← Back to Homepage</a>
+<footer class="footer">
+  &copy; 2025 Evolv.i.ng — A Fused-Up Innovations Masterpiece. | <a href="/">← Back to homepage</a>
 </footer>
-
 <script>
-  function shareNative() {
-    if (navigator.share) {
-      navigator.share({
-        title: 'The Black Man is Not a Fool',
-        text: 'A powerful truth you need to read.',
-        url: window.location.href,
-      }).catch(console.error);
-    } else {
-      alert('Sharing not supported on this browser. Please use WhatsApp or Telegram instead.');
-    }
+function shareNative() {
+  const shareData = {
+    title: "The Black Man is Not a Fool",
+    text: "Read this powerful truth by Oreoluwa O. Olaleye.",
+    url: window.location.href
+  };
+  if (navigator.share) {
+    navigator.share(shareData).catch(err => {
+      if (err.name !== 'AbortError') console.error("Sharing failed:", err);
+    });
+  } else {
+    alert("Your browser doesn’t support native sharing. Use WhatsApp or Telegram.");
   }
+}
 </script>
-
 </body>
 </html>
