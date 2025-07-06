@@ -58,6 +58,32 @@
       text-align: right;
     }
 
+    .share {
+      margin: 3rem 0 1rem;
+      text-align: center;
+    }
+
+    .share button,
+    .share a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      background-color: #222;
+      color: #fdfcf9;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .share button:hover,
+    .share a:hover {
+      background-color: #f9c907;
+      color: #111;
+    }
+
     footer {
       margin-top: 4rem;
       background-color: #111;
@@ -65,6 +91,12 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #f9c907;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     @media screen and (max-width: 600px) {
@@ -87,6 +119,14 @@
 
 <main class="container">
 
+  <!-- Share buttons -->
+  <div class="share">
+    <button onclick="shareNative()">📲 Share</button>
+    <a href="https://wa.me/?text=https://evolv.i.ng/the-black-man.html" target="_blank">📤 WhatsApp</a>
+    <a href="https://t.me/share/url?url=https://evolv.i.ng/the-black-man.html&text=Read this powerful truth." target="_blank">📣 Telegram</a>
+  </div>
+
+  <!-- Main content -->
   <p>Let’s get this straight: the Black man isn’t stupid. <br>
   He isn’t lazy. <br>
   He isn’t lost.</p>
@@ -188,11 +228,27 @@
     — Oreoluwa O. Olaleye<br>
     Rebel with a Reason, Son of the Soil.
   </div>
+
 </main>
 
 <footer>
-  &copy; 2025 Evolv.i.ng. All rights reserved. | Powered by purpose.
+  &copy; 2025 Evolv.i.ng. All rights reserved. | 
+  <a href="/">← Back to Homepage</a>
 </footer>
+
+<script>
+  function shareNative() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'The Black Man is Not a Fool',
+        text: 'A powerful truth you need to read.',
+        url: window.location.href,
+      }).catch(console.error);
+    } else {
+      alert('Sharing not supported on this browser. Please use WhatsApp or Telegram instead.');
+    }
+  }
+</script>
 
 </body>
 </html>
