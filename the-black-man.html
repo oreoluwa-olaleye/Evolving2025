@@ -1,73 +1,131 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="An unapologetic proclamation of African wisdom, pride, and legacy." />
   <meta name="author" content="Oreoluwa O. Olaleye" />
-  <title>The Black Man is Not a Fool | Evolv.i.ng</title>  <meta property="og:title" content="The Black Man is Not a Fool | Evolv.i.ng" />
+  <title>The Black Man is Not a Fool | Evolv.i.ng</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+
+  <!-- OG Tags -->
+  <meta property="og:title" content="The Black Man is Not a Fool | Evolv.i.ng" />
   <meta property="og:description" content="A powerful message by Oreoluwa O. Olaleye." />
-  <meta property="og:image" content="https://evolv.i.ng/assets/images/black-man-cover-aa89977b.jpg" />
+  <meta property="og:image" content="https://evolv.i.ng/assets/images/black-man-cover.jpg" />
   <meta property="og:url" content="https://evolv.i.ng/the-black-man/" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#f9c907" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">  <style>
+
+  <!-- Styles -->
+  <style>
     body {
       margin: 0;
-      font-family: 'Libre Baskerville', Georgia, serif;
+      font-family: 'Georgia', serif;
       background: #fdfcf9;
       color: #222;
     }
+
     header {
-      background: url('/assets/images/black-man-cover-aa89977b.jpg') center/cover no-repeat;
+      background: url('/assets/images/black-man-cover.jpg') center/cover no-repeat;
       color: #fff;
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 5rem 1rem;
       position: relative;
     }
+
     header::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
     }
+
     header h1, header p {
       position: relative;
       z-index: 2;
     }
+
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
       text-transform: uppercase;
       color: #f9c907;
     }
+
     .container {
       max-width: 840px;
       margin: auto;
       padding: 2rem 1.2rem;
     }
-    blockquote {
-      border-left: 4px solid #f9c907;
-      padding-left: 1rem;
-      margin: 2rem 0;
-      font-style: italic;
-      color: #555;
-    }
-    .signature {
-      text-align: right;
-      margin-top: 3rem;
-      font-style: italic;
-    }
+
     .section-title {
       font-size: 1.6rem;
       color: #f9c907;
       margin-top: 3rem;
+      margin-bottom: 1rem;
     }
+
+    .donation-box, .email-signup {
+      background: #f5f5ee;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 3rem;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    }
+
+    .donate-btn {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .donate-btn:hover {
+      background: #f9c907;
+      color: #000;
+    }
+
+    .email-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      max-width: 400px;
+      margin: 1rem auto;
+    }
+
+    .email-form input[type="email"] {
+      padding: 0.7rem;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .email-form input[type="submit"] {
+      background: #000;
+      color: #fff;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .email-form input[type="submit"]:hover {
+      background: #f9c907;
+      color: #000;
+    }
+
     .share-buttons {
       text-align: center;
       margin-top: 2.5rem;
     }
+
     .share-buttons a,
     .share-buttons button {
       background: #111;
@@ -79,137 +137,87 @@
       cursor: pointer;
       text-decoration: none;
     }
-    .donation-box, .email-signup {
-      background: #f5f5ee;
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 3rem;
-      text-align: center;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-    }
-    .donate-btn {
-      display: inline-block;
-      background: #f9c907;
-      color: #000;
-      font-weight: bold;
-      padding: 0.8rem 1.6rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .email-form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.6rem;
-      max-width: 400px;
-      margin: 1rem auto;
-    }
-    .email-form input[type="email"] {
-      padding: 0.7rem;
-      width: 100%;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    .email-form input[type="submit"] {
-      background: #000;
-      color: #fff;
-      padding: 0.7rem 1.4rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .email-form input[type="submit"]:hover {
-      background: #f9c907;
-      color: #000;
-    }
+
     .footer {
       background: #111;
       color: #eee;
       text-align: center;
       padding: 1.5rem 1rem;
       font-size: 0.85rem;
+      margin-top: 4rem;
     }
+
     .footer a {
       color: #f9c907;
       text-decoration: none;
     }
-    .black-wisdom {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      line-height: 1.8;
-    }
-    .africa-img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 2.5rem auto;
-      border-radius: 8px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-    #backToTop {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #000;
-      color: #fff;
-      border: none;
-      padding: 0.6rem 1rem;
-      border-radius: 100px;
-      cursor: pointer;
-      font-size: 0.9rem;
-      display: none;
-      z-index: 999;
-    }
-  </style></head>
+  </style>
+</head>
+
 <body>
 <header>
   <h1>The Black Man is Not a Fool</h1>
   <p>He is Wise.</p>
-</header><main class="container">
+</header>
+
+<main class="container">
+  <!-- About Section -->
   <section class="intro">
     <h2 class="section-title">About Evolv.i.ng</h2>
-    <p><strong>Evolv.i.ng</strong> is a storytelling, transformation, and wisdom project powered by <em>Fused-Up Innovations</em>.</p>
-  </section>  <section class="content">
-    <div class="black-wisdom">
-      <h2 style="text-transform: uppercase; text-align: center;">The Black Man is Not a Fool; He is Wise</h2>
-      <p style="text-align: center; font-style: italic; margin-bottom: 2rem;">Written by Oreoluwa O. Olaleye</p>
-      <p>Let’s get this straight: the Black man isn’t stupid. He isn’t lazy. He isn’t lost...</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Map-Africa-Blank-Political.png" alt="Africa Political Map" class="africa-img" data-aos="zoom-in" />
-      <p>He was wise because he didn’t need to conquer...</p>
-      <blockquote>Wisdom isn't always loud. Sometimes it's rooted, still, and patient.</blockquote>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Africa_Satellite_Orthographic.jpg/800px-Africa_Satellite_Orthographic.jpg" alt="Satellite Africa" class="africa-img" data-aos="fade-up" />
-      <p>They took gold, but couldn't steal glory...</p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/African_tribes_people_collage.jpg/800px-African_tribes_people_collage.jpg" alt="African Culture Collage" class="africa-img" data-aos="fade-up" />
-      <p><strong>So write it clearly:</strong> The Black man is not a fool...</p>
-      <div class="signature">
-        — Oreoluwa O. Olaleye<br />Rebel with a Reason, Son of the Soil.
-      </div>
-    </div>
-  </section>  <section class="donation-box">
+    <p><strong>Evolv.i.ng</strong> is a storytelling, transformation, and wisdom project powered by <em>Fused-Up Innovations</em>. It is a digital sanctuary for thought-leaders, visionaries, rebels, and creatives who know that culture is not just remembered — it is reborn.</p>
+  </section>
+
+  <!-- 👇 PLACEHOLDER: Your full post will go here -->
+  <section class="content">
+    <!-- 🔻 EMBED your full post content here 🔻 -->
+  </section>
+
+  <!-- Donation Section -->
+  <section class="donation-box">
     <h2 class="section-title">Support the Evolv.i.ng Project</h2>
-    <p>Your support fuels unapologetic African storytelling. Donate securely from anywhere in the world.</p>
-    <a href="https://flutterwave.com/pay/jd4hh33hsdj9" target="_blank" class="donate-btn">💳 Donate Online via Flutterwave</a>
-  </section>  <section class="email-signup">
+    <p>Your support fuels unapologetic African storytelling. Donate securely from anywhere in the world, or locally via bank transfer.</p>
+
+    <a href="https://flutterwave.com/pay/jd4hh33hsdj9" target="_blank" class="donate-btn">
+      💳 Donate Online via Flutterwave
+    </a>
+
+    <div style="margin-top: 2rem; text-align: left;">
+      <h3>📍 Bank Transfer (Nigeria)</h3>
+      <p><strong>Bank:</strong> Wema Bank Plc – Tinubu Branch</p>
+      <p><strong>Account Name:</strong> Fused‑Up Innovations</p>
+      <p><strong>Account Number:</strong> 0126530023</p>
+      <p><strong>Sort Code:</strong> 035150420</p>
+      <p><strong>SWIFT:</strong> WEMANGLA02T</p>
+      <p><strong>Branch Address:</strong> Wema House, 27 Nnamdi Azikiwe Street, Tinubu Square, Lagos Island, Nigeria</p>
+      <p>Notify us after transfer: <a href="mailto:hr@fui.com.ng">hr@fui.com.ng</a></p>
+    </div>
+  </section>
+
+  <!-- Email Signup -->
+  <section class="email-signup">
     <h2>📬 Join the Evolv.i.ng Dispatch</h2>
-    <p>Get ancestral truths, essays, and unapologetic wisdom to your inbox.</p>
+    <p>Get ancestral truths, essays, and unapologetic wisdom in your inbox.</p>
     <form action="https://buttondown.email/api/emails/embed-subscribe/oreoluwa" method="post" target="popupwindow"
       onsubmit="window.open('https://buttondown.email/oreoluwa', 'popupwindow')" class="email-form">
-      <input type="email" name="email" placeholder="you@example.com" required />
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com" required />
       <input type="submit" value="Subscribe" />
     </form>
-    <p class="disclaimer">We don’t spam. Just renaissance fuel from the motherland.</p>
-  </section>  <section class="share-buttons">
+    <p class="disclaimer">No spam. Just Renaissance fuel from the motherland.</p>
+  </section>
+
+  <!-- Share Buttons -->
+  <section class="share-buttons">
     <button onclick="shareNative()">📲 Share</button>
     <a href="https://wa.me/?text=Read%20this:%20https://evolv.i.ng/the-black-man/" target="_blank">📤 WhatsApp</a>
     <a href="https://t.me/share/url?url=https://evolv.i.ng/the-black-man/&text=You need to read this." target="_blank">📣 Telegram</a>
   </section>
-</main><footer class="footer">
-  &copy; 2025 Evolv.i.ng — A Fused-Up Innovations Masterpiece. | <a href="/">&larr; Back to homepage</a>
-</footer><button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Top</button>
+</main>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>AOS.init();</script><script>
+<footer class="footer">
+  &copy; 2025 Evolv.i.ng — A Fused-Up Innovations Masterpiece. | <a href="/">← Back to homepage</a>
+</footer>
+
+<script>
 function shareNative() {
   const shareData = {
     title: "The Black Man is Not a Fool",
@@ -224,9 +232,6 @@ function shareNative() {
     alert("Your browser doesn’t support native sharing. Use WhatsApp or Telegram.");
   }
 }
-window.addEventListener('scroll', () => {
-  const btn = document.getElementById('backToTop');
-  btn.style.display = window.scrollY > 400 ? 'block' : 'none';
-});
-</script></body>
+</script>
+</body>
 </html>
