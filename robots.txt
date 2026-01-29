@@ -1,0 +1,100 @@
+# ======================================
+# Universal Robots.txt for Fui.com.ng / Profil.i.ng / Evolv.i.ng
+# Network SEO, Crawl Optimization, and Visibility Boost
+# Managed by Fused-Up Innovations
+# Contact: oreoluwa@fui.com.ng
+# Generated: 2026-01-29
+# ======================================
+
+# ======================================
+# Global Rules for All Bots
+# ======================================
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /*?sessionid=
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.zip$
+Disallow: /*.bak$
+
+# Explicitly allow high-value public content
+Allow: /about.html
+Allow: /careers.html
+Allow: /register.html
+Allow: /contact.html
+Allow: /application.html
+Allow: /terms.html
+Allow: /privacy.html
+Allow: /seasons/
+Allow: /seasons/season1/
+Allow: /seasons/season2/
+Allow: /seasons/season3/
+Allow: /seasons/season4/
+Allow: /seasons/season5/
+Allow: /seasons/season6/
+Allow: /seasons/season7/
+Allow: /seasons/season8/
+Allow: /seasons/season9/
+Allow: /seasons/season10/
+Allow: /seasons/season11/
+Allow: /
+
+# Crawl-delay to protect server resources
+Crawl-delay: 10
+
+# ======================================
+# Cross-Domain SEO / Authority Boost
+# ======================================
+# Signal to crawlers that these domains are related
+Link: <https://profil.i.ng/>; rel="canonical"
+Link: <https://evolv.i.ng/>; rel="canonical"
+Link: <https://fui.com.ng/>; rel="canonical"
+
+# ======================================
+# Sitemap Declarations
+# ======================================
+Sitemap: https://profil.i.ng/sitemap.xml
+Sitemap: https://evolv.i.ng/sitemap.xml
+Sitemap: https://fui.com.ng/sitemap.xml
+
+# ======================================
+# Googlebot Specific Instructions
+# ======================================
+User-agent: Googlebot
+Disallow: /nogoogle/
+Disallow: /private/
+Allow: /
+Crawl-delay: 5
+Noarchive: /
+
+# ======================================
+# Bingbot Specific Instructions
+# ======================================
+User-agent: Bingbot
+Disallow: /nobing/
+Disallow: /private/
+Allow: /
+Crawl-delay: 5
+
+# ======================================
+# Google Image Bot
+# ======================================
+User-agent: Googlebot-Image
+Allow: /
+
+# ======================================
+# Duplicate Param Handling
+# ======================================
+Clean-param: ref /application.html
+Clean-param: utm_source&utm_medium&utm_campaign
+
+# ======================================
+# Host Declaration (primary domain)
+# ======================================
+Host: profil.i.ng
+
+# End of file
+# ======================================
